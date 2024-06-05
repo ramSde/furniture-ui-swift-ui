@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		382CB0452C10759600E41111 /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382CB0442C10759600E41111 /* WelcomeScreen.swift */; };
+		382CB0472C1075C300E41111 /* SignInScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382CB0462C1075C300E41111 /* SignInScreen.swift */; };
+		382CB0492C10809B00E41111 /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382CB0482C10809B00E41111 /* ProfileScreen.swift */; };
+		382CB04C2C1082AC00E41111 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382CB04B2C1082AC00E41111 /* UserSettings.swift */; };
+		382CB04E2C10890D00E41111 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382CB04D2C10890D00E41111 /* HomeView.swift */; };
 		88044CAE25DACF81006C446F /* DetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88044CAD25DACF81006C446F /* DetailScreen.swift */; };
 		8804739725D8C14200F9A279 /* Furniture_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8804739625D8C14200F9A279 /* Furniture_appApp.swift */; };
 		8804739925D8C14200F9A279 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8804739825D8C14200F9A279 /* ContentView.swift */; };
@@ -17,7 +22,6 @@
 		880473C725D8C1D200F9A279 /* PlayfairDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 880473C525D8C1D200F9A279 /* PlayfairDisplay-Regular.ttf */; };
 		880473C825D8C1D200F9A279 /* PlayfairDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 880473C625D8C1D200F9A279 /* PlayfairDisplay-Bold.ttf */; };
 		885A598425D98409003A6F78 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A598325D98409003A6F78 /* HomeScreen.swift */; };
-		888C4E9825DCF21F00F9B6ED /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 888C4E9725DCF21F00F9B6ED /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		382CB0442C10759600E41111 /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
+		382CB0462C1075C300E41111 /* SignInScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreen.swift; sourceTree = "<group>"; };
+		382CB0482C10809B00E41111 /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
+		382CB04B2C1082AC00E41111 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		382CB04D2C10890D00E41111 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		88044CAD25DACF81006C446F /* DetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreen.swift; sourceTree = "<group>"; };
 		8804739325D8C14200F9A279 /* Furniture_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Furniture_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8804739625D8C14200F9A279 /* Furniture_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Furniture_appApp.swift; sourceTree = "<group>"; };
@@ -54,7 +63,6 @@
 		880473C525D8C1D200F9A279 /* PlayfairDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Regular.ttf"; sourceTree = "<group>"; };
 		880473C625D8C1D200F9A279 /* PlayfairDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Bold.ttf"; sourceTree = "<group>"; };
 		885A598325D98409003A6F78 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
-		888C4E9725DCF21F00F9B6ED /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,10 +90,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		382CB04A2C10829B00E41111 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				382CB04B2C1082AC00E41111 /* UserSettings.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
 		8804738A25D8C14200F9A279 = {
 			isa = PBXGroup;
 			children = (
-				888C4E9725DCF21F00F9B6ED /* README.md */,
 				8804739525D8C14200F9A279 /* Furniture_app */,
 				880473A725D8C14400F9A279 /* Furniture_appTests */,
 				880473B225D8C14400F9A279 /* Furniture_appUITests */,
@@ -106,6 +121,7 @@
 		8804739525D8C14200F9A279 /* Furniture_app */ = {
 			isa = PBXGroup;
 			children = (
+				382CB04A2C10829B00E41111 /* common */,
 				885A598225D983F6003A6F78 /* Screens */,
 				880473C425D8C19E00F9A279 /* Fonts */,
 				8804739625D8C14200F9A279 /* Furniture_appApp.swift */,
@@ -157,6 +173,10 @@
 			children = (
 				885A598325D98409003A6F78 /* HomeScreen.swift */,
 				88044CAD25DACF81006C446F /* DetailScreen.swift */,
+				382CB0442C10759600E41111 /* WelcomeScreen.swift */,
+				382CB0462C1075C300E41111 /* SignInScreen.swift */,
+				382CB0482C10809B00E41111 /* ProfileScreen.swift */,
+				382CB04D2C10890D00E41111 /* HomeView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -266,7 +286,6 @@
 			files = (
 				880473C825D8C1D200F9A279 /* PlayfairDisplay-Bold.ttf in Resources */,
 				8804739E25D8C14400F9A279 /* Preview Assets.xcassets in Resources */,
-				888C4E9825DCF21F00F9B6ED /* README.md in Resources */,
 				8804739B25D8C14400F9A279 /* Assets.xcassets in Resources */,
 				880473C725D8C1D200F9A279 /* PlayfairDisplay-Regular.ttf in Resources */,
 			);
@@ -293,10 +312,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				382CB04E2C10890D00E41111 /* HomeView.swift in Sources */,
 				88044CAE25DACF81006C446F /* DetailScreen.swift in Sources */,
+				382CB0492C10809B00E41111 /* ProfileScreen.swift in Sources */,
 				8804739925D8C14200F9A279 /* ContentView.swift in Sources */,
+				382CB0452C10759600E41111 /* WelcomeScreen.swift in Sources */,
 				8804739725D8C14200F9A279 /* Furniture_appApp.swift in Sources */,
+				382CB04C2C1082AC00E41111 /* UserSettings.swift in Sources */,
 				885A598425D98409003A6F78 /* HomeScreen.swift in Sources */,
+				382CB0472C1075C300E41111 /* SignInScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

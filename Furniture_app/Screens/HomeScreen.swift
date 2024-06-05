@@ -87,9 +87,9 @@ struct HomeScreen: View {
                 }
             }
         }
-//        .navigationBarTitle("") //this must be empty
-//        .navigationBarHidden(true)
-//        .navigationBarBackButtonHidden(true)
+        .navigationBarTitle("") //this must be empty
+        .navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
     }
 }
 
@@ -211,12 +211,22 @@ struct ProductCardView: View {
 
 
 struct BottomNavBarView: View {
+    @State private var selectedIndex: Int = 0
+    
     var body: some View {
         HStack {
-            BottomNavBarItem(image: Image("Home"), action: {})
-            BottomNavBarItem(image: Image("fav"), action: {})
-            BottomNavBarItem(image: Image("shop"), action: {})
-            BottomNavBarItem(image: Image("User"), action: {})
+            BottomNavBarItem(image: Image(systemName: "house"), isSelected: selectedIndex == 0) {
+                selectedIndex = 0
+            }
+            BottomNavBarItem(image: Image(systemName: "heart"), isSelected: selectedIndex == 1) {
+                selectedIndex = 1
+            }
+            BottomNavBarItem(image: Image(systemName:"cart"), isSelected: selectedIndex == 2) {
+                selectedIndex = 2
+            }
+            BottomNavBarItem(image: Image(systemName: "person"), isSelected: selectedIndex == 3) {
+                selectedIndex = 3
+            }
         }
         .padding()
         .background(Color.white)
@@ -228,10 +238,13 @@ struct BottomNavBarView: View {
 
 struct BottomNavBarItem: View {
     let image: Image
+    let isSelected: Bool
     let action: () -> Void
+    
     var body: some View {
         Button(action: action) {
             image
+                .foregroundColor(isSelected ? .black : .gray) // Change color based on isSelected
                 .frame(maxWidth: .infinity)
         }
     }
